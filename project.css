@@ -1,0 +1,95 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #080808;
+  color: #fff;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.rotating-text {
+  font-size: 70px;
+  color: chocolate;
+  font-weight: 900;
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.card {
+  background-color: #000;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+}
+
+.card:hover {
+  border: 2px solid yellow;
+  background-color: #ff004f;
+}
+.card h5 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card a {
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid burlywood;
+  border-radius: 7px;
+}
+
+.card a:hover {
+  color: rgb(221, 134, 21);
+  border: 2px solid blue;
+  background-color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+}

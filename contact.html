@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css" />
+   
+  </head>
+  <body>
+    <div id="contact-us">
+      <div class="container">
+        <center><h1>Send me Message</h1></center>
+        <form action="">
+            <div class="email">
+            <label for="email">Name</label><br />
+            <input
+              type="text"
+              name="email"
+              id="name"
+              placeholder="Enter your Name"
+            />
+          </div>
+          <div class="email">
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="Email"
+              placeholder="Enter your E-mail"
+            />
+          </div>
+          <div class="message">
+            <label for="message">Message</label><br />
+            <textarea name="textarea" id="text" cols="30" rows="5" placeholder="Enter your message....."></textarea>
+          </div>
+          <button id="send">Send Msg</button>
+            <div class="icon">
+          <a href="https://instagram.com/_i_m_ni_3_k?igshid=MzNlNGNkZWQ4Mg=" id="insta"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://www.facebook.com/profile.php?id=100088142149379" id="face"><i class="fa-brands fa-facebook"></i></i></a>
+           <a href="" id="twitter"><i class="fa-brands fa-twitter"></i></i></i></a>
+            <a href="https://www.linkedin.com/in/nitik-sharma-774b6922a" id="linkedin"><i class="fa-brands fa-linkedin"></i></i></i></i></a>
+             <a href="https://github.com/Nitik-sharma" id="GitHub"><i class="fa-brands fa-github"></i></a>
+             <a href="" id="phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="contact.js"></script>
+   <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("VMOuanPm2uCYtoZgZ");
+   })();
+</script>
+</html>

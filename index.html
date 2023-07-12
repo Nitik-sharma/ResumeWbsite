@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="image/logo-white.png" alt="" class="logo" />
+
+          <ul id="sideMenu">
+            <li><a href="index.html" class="link">Home</a></li>
+            <li><a href="aboutme.html" class="link">About us</a></li>
+            <li><a href="project.html" class="link">Projects</a></li>
+            <li><a href="portfolio.html" class="link">Portfolio</a></li>
+            <li><a href="contact.html" class="link">Contact US</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UX/UI Deginer</p>
+          <p>Front-End Developer</p>
+          <h1>Hi, I'm <span>Nitik</span> <br />Sharma from Haryana</h1>
+           <div class="icon">
+          <a href="https://instagram.com/_i_m_ni_3_k?igshid=MzNlNGNkZWQ4Mg=" id="insta"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://www.facebook.com/profile.php?id=100088142149379" id="face"><i class="fa-brands fa-facebook"></i></i></a>
+           <a href="https://twitter.com/NitikSh61576555?t=yMvybn5yPWTsJnU8GxoMBg&s=08" id="twitter"><i class="fa-brands fa-twitter"></i></i></i></a>
+            <a href="https://www.linkedin.com/in/nitik-sharma-774b6922a" id="linkedin"><i class="fa-brands fa-linkedin"></i></i></i></i></a>
+             <a href="https://github.com/Nitik-sharma" id="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        </div>
+       
+      </div>
+    </div>
+<script>
+  const side=document.getElementById("sideMenu");
+  function openMenu(e){
+   
+    console.log("hii");
+side.style.right="0";
+  }
+  function closeMenu(){
+    side.style.right="-200px"
+  }
+</script>
+    
+  </body>
+</html>
